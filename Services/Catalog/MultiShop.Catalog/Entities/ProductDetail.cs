@@ -3,21 +3,20 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace MultiShop.Catalog.Entities
 {
-    public class Product
+    public class ProductDetail
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
         public string Id { get; set; }
-        public string Name { get; set; }
-        public decimal Price { get; set; }
-        public string ImageUrl { get; set; }
         public string Description { get; set; }
-        public string CategoryId { get; set; }
+        public string ProductInfo { get; set; }
+        public string ProductId { get; set; }
+
+
 
 
 
         [BsonIgnore]
-        public Category Category { get; set; }
-
+        public Product Product { get; set; }
     }
 }
