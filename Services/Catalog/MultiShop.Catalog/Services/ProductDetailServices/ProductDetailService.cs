@@ -3,12 +3,11 @@ using MongoDB.Driver;
 using MultiShop.Catalog.Dtos.ProductDetailDtos;
 using MultiShop.Catalog.Dtos.ProductDtos;
 using MultiShop.Catalog.Entities;
-using MultiShop.Catalog.Services.ProductDetailDetailServices;
 using MultiShop.Catalog.Settings;
 
 namespace MultiShop.Catalog.Services.ProductDetailServices
 {
-    public class ProductDetailService : IProductDetailDetailService
+    public class ProductDetailService : IProductDetailService
     {
         private readonly IMapper _mapper;
         private readonly IMongoCollection<ProductDetail> _productDetailCollection;

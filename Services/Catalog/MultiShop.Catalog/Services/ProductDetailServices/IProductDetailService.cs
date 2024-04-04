@@ -1,8 +1,8 @@
 ﻿using MultiShop.Catalog.Dtos.ProductDetailDtos;
 
-namespace MultiShop.Catalog.Services.ProductDetailDetailServices
+namespace MultiShop.Catalog.Services.ProductDetailServices
 {
-    public interface IProductDetailDetailService
+    public interface IProductDetailService
     {
         Task<List<ResultProductDetailDto>> GetAllProductDetailAsync();
         Task CreateProductDetailAsync(CreateProductDetailDto createProductDetailDto);
